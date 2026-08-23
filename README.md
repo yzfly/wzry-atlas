@@ -35,9 +35,15 @@ cp -r skill/wzry-build-advisor ~/.claude/skills/
 会得到 30 秒能读完的建议：【下一件】+ 理由、【之后】出装顺序、【成装】六神装、
 【提醒】关键机制（如压制不吃韧性、贤者限复活 2 次）。
 
-WorkBuddy 用户可使用 `dist/workbuddy/wzry-build-advisor/`（含 config.yaml），
-在装有 WorkBuddy 的环境中执行 `workbuddy skills publish` 即可发布/安装。
-OpenClaw 用户可从 ClawHub 安装：`clawhub install wzry-build-advisor`。
+**其他平台安装「王者大师」：**
+
+- **OpenClaw**（ClawHub）：`clawhub install wzry-build-advisor`
+- **WorkBuddy / 其他 Agent 工具**（OpenCode、Cline、Cursor 等 17+ 种）：
+  ```bash
+  npx skills add LangGPT/wzry-atlas@wzry-build-advisor -g -y
+  ```
+  或直接对 WorkBuddy 说「帮我安装 LangGPT/wzry-atlas@wzry-build-advisor」；
+  也可手动把 `dist/workbuddy/wzry-build-advisor/` 复制到 `~/.workbuddy/skills/`。
 
 ## 免责声明
 
