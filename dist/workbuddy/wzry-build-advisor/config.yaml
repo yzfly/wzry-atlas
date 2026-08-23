@@ -1,6 +1,6 @@
 name: wzry-build-advisor
 version: 1.0.0
-description: 王者荣耀出装建议——告诉我你玩的英雄、对面难搞的英雄和当前装备，30 秒内给出下一件装备与成装路线（基于官方装备/英雄数据与克制规则）。
+description: 王者大师：王者荣耀出装建议。告诉我你玩的英雄、对面难搞的英雄和当前装备，30 秒内给出下一件装备与成装路线（基于官方装备/英雄数据与克制规则）。
 category: productivity
 triggers:
   - 王者荣耀出装

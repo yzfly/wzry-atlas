@@ -1,6 +1,6 @@
 # 王者图鉴 wzry-atlas
 
-王者荣耀 装备 · 英雄 · 技能 可视化图鉴，附出装建议 AI Skill（纯文本方案）。
+王者荣耀 装备 · 英雄 · 技能 可视化图鉴，附出装建议 AI Skill「王者大师」（纯文本方案）。
 
 **在线访问：<https://langgpt.github.io/wzry-atlas/>**
 
