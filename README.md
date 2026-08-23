@@ -17,15 +17,18 @@
 支持分类筛选与全文搜索；点击卡片查看详情——装备可沿合成链上下跳转，英雄可查看
 全部技能数值与四维属性。也可下载 `index.html` 单个文件离线使用（图标已内嵌）。
 
-### 出装建议 Skill（配合 Claude Code / Claude 使用）
+### 出装建议 Skill「王者大师」
 
 Skill 为**纯文本方案**：装备全文描述 + 英雄技能摘要 + 手写克制规则
-（威胁类型 → 克制装备映射），无脚本、无数据库依赖，可单独分发。
-
-安装：
+（威胁类型 → 克制装备映射），无脚本、无数据库依赖。
+统一发布在 **[yzfly/skills](https://github.com/yzfly/skills)**（云中江树 Skills 仓库）：
 
 ```bash
-cp -r skill/wzry-build-advisor ~/.claude/skills/
+# 通用（Claude Code、WorkBuddy、Cursor、Cline 等 17+ 种 Agent 工具）
+npx skills add yzfly/skills@wzry-build-advisor -g -y
+
+# OpenClaw
+clawhub install wzry-build-advisor
 ```
 
 游戏中直接问，例如：
@@ -34,16 +37,6 @@ cp -r skill/wzry-build-advisor ~/.claude/skills/
 
 会得到 30 秒能读完的建议：【下一件】+ 理由、【之后】出装顺序、【成装】六神装、
 【提醒】关键机制（如压制不吃韧性、贤者限复活 2 次）。
-
-**其他平台安装「王者大师」：**
-
-- **OpenClaw**（ClawHub）：`clawhub install wzry-build-advisor`
-- **WorkBuddy / 其他 Agent 工具**（OpenCode、Cline、Cursor 等 17+ 种）：
-  ```bash
-  npx skills add LangGPT/wzry-atlas@wzry-build-advisor -g -y
-  ```
-  或直接对 WorkBuddy 说「帮我安装 LangGPT/wzry-atlas@wzry-build-advisor」；
-  也可手动把 `dist/workbuddy/wzry-build-advisor/` 复制到 `~/.workbuddy/skills/`。
 
 ## 免责声明
 
